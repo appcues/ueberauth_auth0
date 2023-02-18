@@ -51,7 +51,7 @@ defmodule UeberauthAuth0.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
 
       # Testing:
-      {:exvcr, "~> 0.10", only: :test},
+      {:exvcr, "~> 0.13", only: :test},
       {:excoveralls, "~> 0.11", only: :test},
 
       # Type checking
