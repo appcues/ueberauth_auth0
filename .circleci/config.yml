@@ -1,0 +1,10 @@
+jobs:
+  build:
+    docker:
+      - image: cimg/elixir:1.14.1-erlang-25.1.2
+    steps:
+      - checkout
+      - run: mix --version
+      - run: mix deps.get
+      - run: mix dialyzer
+      - run: mix test
